@@ -1,0 +1,287 @@
+\documentclass{article}
+
+% NeurIPS style file
+\usepackage{neurips_2026}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+
+% Project title and authors
+\title{CSC413 Project Proposal: [Your Project Title]}
+
+\author{
+  Member One \\
+  University of Toronto
+  \And
+  Member Two \\
+  University of Toronto
+  \And
+  Member Three \\
+  University of Toronto
+}
+
+\begin{document}
+
+\maketitle
+
+% ============================================================
+\begin{abstract}
+% Target: approximately half a page.
+% Describe:
+% 1. The problem and motivation.
+% 2. The task your model will perform.
+% 3. The dataset and its important characteristics.
+% 4. The proposed neural network architecture.
+% 5. How you will evaluate the model.
+% 6. Why the results could be useful or meaningful.
+
+[Write your abstract here. Give the reader enough information about
+the project, data, task, and model to understand the work and determine
+whether they have the expertise to review it.]
+
+\end{abstract}
+
+% ============================================================
+\section{Introduction}
+
+% Explain WHAT, WHY, and SO WHAT.
+% - What problem are you solving?
+% - Why is the problem important?
+% - Who might benefit from a solution?
+% - Why is deep learning a reasonable approach?
+% - What is your general approach?
+% - What are your main goals and expected contributions?
+
+\subsection{Problem and Motivation}
+
+[Introduce the problem and explain its real-world or research
+significance.]
+
+\subsection{Project Goals}
+
+[Describe the specific task, intended model behavior, and measurable
+objectives.]
+
+\subsection{Proposed Approach}
+
+[Briefly introduce the planned model, data, and evaluation strategy.
+Explain why a neural network is appropriate for the task.]
+
+% ============================================================
+\section{Background and Related Work}
+
+% Provide enough domain context for CSC413 students and TAs.
+% Discuss at least 1--2 works directly related to your task.
+% Cite sources for domain concepts, datasets, and referenced models.
+
+\subsection{Background}
+
+[Explain relevant domain concepts, terminology, and task-specific
+challenges that readers may not already know.]
+
+\subsection{Related Work}
+
+[Discuss at least one or two prior papers that solve similar problems.
+For each paper, describe its task, approach, key findings, and
+relationship to your project.]
+
+\subsection{How Our Work Differs}
+
+[Explain what you will adapt, compare, investigate, or contribute
+beyond the existing work.]
+
+% Example citation:
+% Prior work has explored related approaches \citep{author2024}.
+
+% ============================================================
+\section{Data}
+
+\subsection{Dataset Description}
+
+[Describe the dataset source, size, features, labels, and data types.
+Discuss class balance, missing values, noise, and other relevant
+characteristics. Explain why the dataset is suitable for your task.]
+
+\subsection{Data Preprocessing}
+
+[Describe reproducible cleaning and formatting steps, including
+filtering, normalization, tokenization, resizing, encoding, or
+augmentation as appropriate.]
+
+\subsection{Training, Validation, and Test Splits}
+
+[Explain how the data will be split, including split proportions
+and how data leakage will be prevented.]
+
+\subsection{Exploratory Data Analysis}
+
+[Describe important patterns, distributions, examples, or challenges
+discovered during data exploration. Add plots or tables if useful.]
+
+% ============================================================
+\section{Model Architecture}
+
+\subsection{Model Overview}
+
+[Describe the type of neural network you plan to use and why it fits
+the task and the structure of the data.]
+
+\subsection{Architecture Components}
+
+[Explain the key layers or components, their roles, and how information
+flows through the model. Include relevant dimensions or hyperparameters
+where known.]
+
+\subsection{Input and Output}
+
+[Specify the input representation, output format, prediction target,
+and any activation functions or loss functions you plan to use.]
+
+\subsection{Training Strategy}
+
+[Describe the planned optimizer, learning rate, batch size, number of
+epochs, regularization, and evaluation metrics. Mark undecided choices
+as preliminary plans.]
+
+% ============================================================
+\section{Model Architecture Figure}
+
+% Upload your figure to Overleaf, for example as architecture.png.
+% Replace the filename below with your actual figure filename.
+
+\begin{figure}[H]
+    \centering
+    % Uncomment once your figure has been uploaded.
+    % \includegraphics[width=0.9\linewidth]{architecture.png}
+
+    \fbox{
+        \parbox[c][2.0in][c]{0.85\linewidth}{
+            \centering
+            \textbf{Architecture Figure Placeholder}\\[0.5em]
+            Input Data $\rightarrow$ Preprocessing
+            $\rightarrow$ Neural Network
+            $\rightarrow$ Prediction
+            $\rightarrow$ Evaluation
+        }
+    }
+
+    \caption{Overview of the proposed model architecture.
+    Replace this placeholder with a diagram showing the actual
+    data flow and important model components.}
+    \label{fig:architecture}
+\end{figure}
+
+[Explain the key design choices illustrated in Figure~\ref{fig:architecture}.]
+
+% ============================================================
+\section{Ethical Considerations}
+
+\subsection{Data Collection and Privacy}
+
+[Discuss dataset consent, privacy, sensitive information, licensing,
+representation, and possible collection biases.]
+
+\subsection{Bias and Fairness}
+
+[Consider whether the data or model could disadvantage particular
+groups or systematically produce unequal errors.]
+
+\subsection{Potential Benefits and Harms}
+
+[Explain beneficial applications, misuse scenarios, limitations,
+and the consequences of incorrect predictions.]
+
+\subsection{Mitigation Strategies}
+
+[Describe practical steps to reduce risks, such as data filtering,
+privacy protection, subgroup evaluation, transparency, or human review.]
+
+% ============================================================
+\section{Work Division}
+
+% Replace the example rows with your actual team members and plans.
+% Include responsibilities, weekly time estimates, deliverables,
+% dependencies, and potential scheduling conflicts.
+
+\begin{table}[H]
+    \centering
+    \small
+    \caption{Division of responsibilities and planned time commitment.}
+    \label{tab:workdivision}
+    \begin{tabularx}{\linewidth}{
+        @{}p{0.16\linewidth}
+        X
+        p{0.16\linewidth}
+        p{0.18\linewidth}@{}
+    }
+        \toprule
+        \textbf{Member} &
+        \textbf{Responsibilities and Deliverables} &
+        \textbf{Weeks} &
+        \textbf{Hours/Week} \\
+        \midrule
+        Member One &
+        Literature review, dataset investigation, and data preprocessing. &
+        1--3 &
+        [X] \\
+        \addlinespace
+        Member Two &
+        Model implementation, architecture design, and training pipeline. &
+        2--5 &
+        [X] \\
+        \addlinespace
+        Member Three &
+        Evaluation, baseline comparisons, and result visualization. &
+        3--5 &
+        [X] \\
+        \addlinespace
+        All members &
+        Paper writing, integration, debugging, and final review. &
+        1--6 &
+        [X] \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\subsection{Weekly Plan}
+
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Week 1:} Finalize the task, research related work,
+    and inspect the dataset.
+    \item \textbf{Week 2:} Complete preprocessing and establish a baseline.
+    \item \textbf{Week 3:} Implement the proposed model and begin training.
+    \item \textbf{Week 4:} Tune hyperparameters and run experiments.
+    \item \textbf{Week 5:} Analyze results, perform comparisons, and
+    address limitations.
+    \item \textbf{Week 6:} Finalize the report, figures, and reproducibility
+    checks.
+\end{itemize}
+
+\subsection{Coordination and Dependencies}
+
+[Explain which tasks depend on others, how code and results will be
+integrated, how often the team will meet, and how conflicts or delays
+will be handled.]
+
+% ============================================================
+% References
+% Create a file named references.bib and add your sources there.
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}
+```
