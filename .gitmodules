@@ -1,0 +1,3 @@
+[submodule "Data/SuperSMS"]
+	path = Data/SuperSMS
+	url = https://github.com/smspamresearch/spstudy/
